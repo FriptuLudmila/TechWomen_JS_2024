@@ -1,0 +1,45 @@
+/* styles.css */
+:root {
+    --primary-color: #fff;
+    --background-color: #333;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+nav a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+#darkModeToggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+/* Dark mode styles */
+.dark-theme {
+    --primary-color: #333;
+    --background-color: #fff;
+}
+
+/* Responsive layout */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+}
+
